@@ -1,0 +1,19 @@
+.Main2{
+    margin-left: 30vw;
+    width: 40vw;
+    background-color: brown;
+    margin: 0px;
+    border: 15px solid rgba(155, 155, 155, 0.801);
+    border-radius: 50px;
+}
+.Main2 img{
+    width: 30vw;
+    height: 60vh;
+    border-radius: 50px;
+}
+button{
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 10vw;
+}

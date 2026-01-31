@@ -1,0 +1,12 @@
+.Main1{
+    width: 100vw;
+    height: 25vh;
+    background-color: blueviolet;
+    margin: 0px;
+}
+*{
+    margin: 0px;
+    text-align: center;
+    color: white;
+    font-size:10px;
+}

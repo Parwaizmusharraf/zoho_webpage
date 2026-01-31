@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="return submitForm()">
+        <label for="">Name</label>
+        <br>
+        <input type="text" id="username" required>
+        <br>
+        <span style="color: tomato;" id="Message1"></span>
+        <br>
+        <label for="">Number</label>
+        <br>
+        <input type="number" id="usernumber">
+        <br>
+        <span style="color: tomato;" id="Message2"></span>
+        <br>
+        <input type="Mail" id="usermail" required>
+        <br>
+        <span style="color: tomato;" id="Message3"></span>
+        <br>
+
+        <input type="submit">
+    </form>
+
+</body>
+<script>
+
+    function submitForm() {
+        let Username = document.getElementById("username").value;
+        let Usernumber = document.getElementById("usernumber").value;
+        let UserMail = document.getElementById("usermail").value;
+        if (Username == "") {
+            document.getElementById("Message1").innerHTML = "Kindly Enter The Name"
+            return false;
+        }
+        else {
+            document.getElementById("Message1").innerHTML = ""
+        }
+        if(inNaN(Usernumber)){
+            document.getElementById("Message2").innerHTML = "Kindly Enter The Valid Number";
+            return false;
+        }
+        if (Usernumber == "") {
+            document.getElementById("Message2").innerHTML = "Kindly Enter The Number";
+            return false;
+        }
+        else {
+            document.getElementById("Message2").innerHTML = ""
+        }
+        if (UserMail == "") {
+            document.getElementById("Message3").innerHTML = "Kindly Enter The Email";
+            return false;
+        }
+        else {
+            document.getElementById("Message3").innerHTML = ""
+        }
+        alert("Form is Submitted")
+        return true;
+
+
+    }
+</script>
+
+</html>

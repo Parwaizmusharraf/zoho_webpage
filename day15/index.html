@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="">
+        <h1>Random user</h1>
+        <div id="user">
+
+        </div>
+        <button onclick="fetchData()">Get user</button>
+    </div>
+</body>
+<script>
+    let userContainer = document.getElementById('user');
+    async function fetchData() {
+        try {
+            let response = await fetch('https://randomuser.me/api/');
+            let data = await response.json();
+            let userData = data.results[0];
+            let name = `${userData.name.title} ${userData.name.first} ${userData.name.last}`
+            let image = userData.picture.large;
+            userContainer.innerHTML = `<img src="${image}"> <h1> ${name} </h1>`
+        }
+        catch (err) {
+            console.log(err);
+        }
+    }
+</script>
+
+</html>

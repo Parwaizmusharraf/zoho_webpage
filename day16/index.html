@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?cs=srgb&dl=pexels-garvin-st-villier-719266-3311574.jpg&fm=jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items: center;
+            justify-content: left;
+            text-align: center;
+            display: flex;
+            height: 100vh;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100vh;
+        }
+
+        h1 {
+            padding-left: 100px;
+            padding-top: 50px;
+        }
+
+        #btn {
+            border-radius: 10px 10px 10px 10px;
+            background-color: black;
+            color: white;
+            width: 15vw;
+            height: 5vh;
+            border: 2px solid black;
+
+        }
+
+        form {
+
+            padding: 119px 0 24px 50px;
+            box-shadow: 20px 13px 14px 1px rgba(182, 175, 175, 0.212);
+            font-size: x-large;
+            background: #e9e3eb3a;
+        }
+
+        table {}
+
+        td {
+            padding-bottom: 30px;
+            padding-left: 30px;
+        }
+
+        #i-box {
+            position: relative;
+            background: transparent;
+            border-radius: 10px 10px 10px 10px;
+            border: 1px solid white;
+            color: black;
+            position: relative;
+        }
+
+        #demo {
+            width: 200px;
+            height: 5%;
+            background-color: #7d7a7a;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Login Here</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Name <input type=" text" name="name" id="i-box" "></td>
+                </tr>
+                <tr>
+                    <td>Number <input type=" number" name="phone_no" id="i-box">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email <input type="email" name="mail" id="i-box"></td>
+                </tr>
+                <tr>
+                    <td>Password <input type="password" name="password" id="i-box"></td>
+                </tr>
+                <tr>
+                    <td><button id="btn" type="button">Login</button></td>
+                </tr>
+            </table>
+        </form>
+        <div id="demo">
+            language
+        </div>
+    </div>
+</body>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pagelanguage: 'en' }, 'demo');
+    }
+</script>
+
+</html>

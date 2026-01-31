@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    class IDModel {
+        constructor(username, userage, userrollno) {
+            this.Name = username;
+            this.age = userage;
+            this.rollno = userrollno;
+        }
+        printId() {
+            document.writeln(`Name is ${this.Name}, age is ${this.age}, and the rollno is ${this.rollno}`)
+        }
+    }
+    let ParwaizID = new IDModel("parwaiz", 23, "21dpit014hy")
+    let MusharrafID = new IDModel("Musharraf", 22, "21dpit015hy")
+    ParwaizID.printId();
+    MusharrafID.printId();
+</script>
+
+</html>
